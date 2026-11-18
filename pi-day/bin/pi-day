@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Runs this checkout's pi from source with pi-day's own config directory.
+set -euo pipefail
+
+PI_DAY_DIR="$(cd "$(dirname "$(realpath "${BASH_SOURCE[0]}")")/.." && pwd)"
+REPO_DIR="$(dirname "$PI_DAY_DIR")"
+
+# Keeps settings, auth, sessions and installed packages apart from any stock `pi` install.
+export PI_CODING_AGENT_DIR="${PI_CODING_AGENT_DIR:-$HOME/.pi-day/agent}"
+
+exec "$REPO_DIR/pi-test.sh" "$@"

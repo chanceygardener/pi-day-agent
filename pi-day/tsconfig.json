@@ -1,0 +1,6 @@
+// Type-checks pi-day against the modules extensions see at run time, by reusing the example extensions' config.
+{
+	"extends": "../packages/coding-agent/examples/tsconfig.json",
+	"include": ["./extensions/**/*", "./test/**/*", "../packages/*/src/**/*.d.ts"],
+	"exclude": ["**/node_modules/**"]
+}

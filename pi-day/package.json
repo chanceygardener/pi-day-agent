@@ -1,0 +1,21 @@
+{
+	"name": "pi-day",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"description": "Personal pi distribution: engineering-skills routing, engineering-principled subagents, and a local Ollama provider.",
+	"scripts": {
+		"test": "node --test test/*.test.ts",
+		"check": "node ../node_modules/typescript/bin/tsc --noEmit -p tsconfig.json && node ../node_modules/@biomejs/biome/bin/biome check ."
+	},
+	"pi": {
+		"extensions": [
+			"./extensions/ollama/index.ts"
+		],
+		"subagents": {
+			"agents": [
+				"./agents"
+			]
+		}
+	}
+}

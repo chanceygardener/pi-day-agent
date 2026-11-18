@@ -1,0 +1,11 @@
+{
+	"provider": "exa",
+	"workflow": "none",
+	"allowBrowserCookies": false,
+	"webSearch": {
+		"allowedProviders": ["exa"]
+	},
+	"fetchRouting": {
+		"allowRemoteHostedProviders": false
+	}
+}

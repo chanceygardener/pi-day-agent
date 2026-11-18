@@ -1,0 +1,6 @@
+{
+	"skills": ["~/engineering-skills"],
+	"subagents": {
+		"defaultSubagentOnlyExtensions": ["${PI_WEB_ACCESS_EXTENSION}"]
+	}
+}
